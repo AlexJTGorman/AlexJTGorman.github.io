@@ -1,4 +1,20 @@
+body {
+    background-color: dimgray;
+    color: aquamarine;
+}
+
+head {
+    background-color: dimgray;
+    color: aquamarine;
+}
+
 h1 {
-color: red;
-text-align: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
 }
