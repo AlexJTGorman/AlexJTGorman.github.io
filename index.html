@@ -1,33 +1,165 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Alex J T Gorman, developer extraordinaire</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-</head>
-
-<body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>Alex Gorman Github Pages</title>
     
-<style type = 'text/css'>
-    .flex { display: flex; flex-direction: row; justify-content: flex-end; width: 1080px; padding: 4px; }
-    .flex div { padding: 4px; background: #FFFFFF; font-family: Helvetica; font-size: 65px; text-align: center; color: black; }
-</style>
-<div class = 'flex'>
-    <div style = 'width: 545px; height: 125px'>Alex J T Gorman</div>
-    <div style = 'width: 545pxpx; height: 125px'>alexjtgorman@gmail.com</div>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/blog.css">
+        <!--<![endif]-->
+</head>
+<body>
+
+
+
+
+
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Alex J T Gorman</h1>
+            <h2 class="brand-tagline">alexjtgorman@gmail.com</h2>
+            <h2 class="brand-tagline">github.com/AlexJTGorman</h2>
+            
+                        <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" onClick="document.getElementById('work').scrollIntoView();">Work History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" onClick="document.getElementById('academic').scrollIntoView();">Academic History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" onClick="document.getElementById('projects').scrollIntoView();">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div id='work' class="posts">
+                <h1 class="content-subhead">Work History</h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Apption Labs</h2>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Software Test Engineer <i>(October 2018 - Present)</i>
+                            
+                            <ul>
+                                <li>Worked in a small team in an agile app development environment</li>
+                                <li>Used Android Studio (Java/Kotlin) and XCode (Swift) daily</li>
+                                <li>Performed both black box product testing and source code testing</li>
+                                <li>Despite working only part time whilst being a student, I contributed a number of elements to our app</li>
+                        </ul>
+                        </p>
+                    </div>
+                </section>
+                
+                 <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">ASK4 Ltd.</h2>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Network Support Engineer<i>(July 2015 - August 2017)</i>                            
+                        </p>
+                        
+                        <ul>
+                            <li>Experience in a technical role working closely with the Second Line and NOC departments</li>
+                            <li>Praised for leading the company wide internal IT support department alongside my customer support role</li>
+                            <li>Very active in meeting customer needs, working on up to 70 support tickets per shift in busy periods</li>
+                            <li>Worked on a social media team, duties included engaging with customers over various social media platforms and promoting the company and brand</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div id='academic' class="posts">
+                <h1 class="content-subhead">Academic History</h1>
+
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">De Montfort University, Leicester</h2>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Computer Science, BSc <i>(2017 - 2020)</i>
+                        </p>
+                        
+                        <ul>
+                            <li>Focused largely on Object Oriented Development</li>
+                            <li>Final projects completed in Java 8 with a large incorporation of functional programming</li>
+                            <li>Studied Haskell and Scala alongside Java for further functional experience</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Huddersfield University</h2>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Biology (Molecular and Cellular), CertHE <i>(2013 - 2014)</i>
+                        </p>
+                        
+                        <ul>
+                            <li>Obtained a Certificate of Higher Education in one year</li>
+                        </ul>
+                    </div>
+
+                </section>
+
+            </div>
+        
+            <div id='projects' class="posts">
+                <h1 class="content-subhead">Projects</h1>
+            </div>
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+
+                        <li class="pure-menu-item"><a href="https://github.com/AlexJTGorman" class="pure-menu-link">Github</a></li>
+                                                <li class="pure-menu-item"><a href="https://purecss.io" class="pure-menu-link">Made using PureCSS</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<h3 style = "margin-top: 50px">Listed below are my current or past projects.</h3>
-    
-    <p>Please feel free to browse them and contant me with any queries or recommendations.</p>
-    
-    <p>Below my projects is an interactive copy of CV and contact details.</p>
-    
-    
-<h3 style = "margin-top: 20px">This website</h3>
-    
-    <p>Please do look through the source code for this site, hosted as a repository on my Github.</p>
-    
+
+
 
 </body>
-
 </html>
